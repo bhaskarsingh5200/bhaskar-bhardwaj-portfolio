@@ -1,0 +1,121 @@
+export const pricingTiers = [
+  {
+    id: "starter",
+    name: "Starter",
+    dot: "🟢",
+    price: "₹15,000",
+    audience: "Small / local gym",
+    popular: false,
+    blurb: "A professional website that builds your brand — without the heavy features.",
+    features: [
+      "Custom responsive design",
+      "Home, About & core pages",
+      "Basic membership plans",
+      "Gallery + Instagram link/grid",
+      "WhatsApp, contact form, Google Maps",
+      "FAQ + testimonials",
+      "Basic SEO, security & performance"
+    ]
+  },
+  {
+    id: "professional",
+    name: "Professional",
+    dot: "🔵",
+    price: "₹25,000",
+    audience: "Growing gym",
+    popular: true,
+    blurb: "The most popular package — everything a growing gym needs to stand out.",
+    features: [
+      "Everything in Starter",
+      "Dynamic membership plans",
+      "Programs + trainer profiles",
+      "Free trial booking + class timetable",
+      "Transformations + nutrition section",
+      "Blog + basic admin dashboard",
+      "SEO & performance optimization"
+    ]
+  },
+  {
+    id: "business",
+    name: "Business",
+    dot: "🟣",
+    price: "₹35,000",
+    audience: "Serious business",
+    popular: false,
+    blurb: "Best-value package — website plus business management tools.",
+    features: [
+      "Everything in Professional",
+      "CRM + lead management",
+      "Member management + expiry & renewal tracking",
+      "Class booking + attendance",
+      "Shop with cart, checkout & orders",
+      "Advanced SEO + analytics",
+      "Notifications & renewal alerts"
+    ]
+  },
+  {
+    id: "premium",
+    name: "Premium",
+    dot: "🔥",
+    price: "₹49,000",
+    audience: "Premium / pro gym",
+    popular: false,
+    blurb: "The complete business system — website plus full gym management suite.",
+    features: [
+      "Everything in Business",
+      "Advanced membership + booking + attendance",
+      "Advanced shop, coupons & payment gateway",
+      "Admin roles, audit logs & alerts",
+      "Advanced analytics + local SEO",
+      "Advanced security hardening",
+      "Priority support"
+    ]
+  }
+];
+
+export const pricingComparison = [
+  { feature: "Custom responsive design", values: ["yes", "yes", "yes", "yes"] },
+  { feature: "Mobile + Tablet + Desktop", values: ["yes", "yes", "yes", "yes"] },
+  { feature: "Home page", values: ["yes", "yes", "yes", "yes"] },
+  { feature: "About page", values: ["yes", "yes", "yes", "yes"] },
+  { feature: "Membership Plans", values: ["Basic", "Dynamic", "Dynamic + comparison", "Advanced"] },
+  { feature: "Programs / Training Plans", values: ["Basic", "yes", "yes", "yes"] },
+  { feature: "Trainers", values: ["Basic section", "Profiles", "Admin managed", "Advanced"] },
+  { feature: "Facilities", values: ["yes", "yes", "yes", "yes"] },
+  { feature: "Gallery", values: ["yes", "yes", "yes", "yes"] },
+  { feature: "Instagram section", values: ["Link/Grid", "Feed section", "Feed + admin fallback", "Advanced integration"] },
+  { feature: "WhatsApp", values: ["yes", "yes", "yes", "yes"] },
+  { feature: "Contact form", values: ["yes", "yes", "yes", "yes"] },
+  { feature: "Google Maps", values: ["yes", "yes", "yes", "yes"] },
+  { feature: "Free Trial Booking", values: ["no", "yes", "yes", "Advanced"] },
+  { feature: "Class Timetable", values: ["no", "Basic", "Dynamic", "Dynamic + booking"] },
+  { feature: "Class Booking", values: ["no", "no", "yes", "yes"] },
+  { feature: "Testimonials", values: ["yes", "yes", "Admin managed", "yes"] },
+  { feature: "Transformations", values: ["no", "yes", "yes", "yes"] },
+  { feature: "Blog", values: ["no", "Basic", "Admin managed", "Advanced"] },
+  { feature: "FAQ", values: ["yes", "yes", "yes", "yes"] },
+  { feature: "SEO setup", values: ["Basic", "yes", "Advanced", "Advanced + Local SEO"] },
+  { feature: "Admin Dashboard", values: ["no", "Basic", "yes", "Full"] },
+  { feature: "Lead Management / CRM", values: ["no", "no", "Basic", "Advanced"] },
+  { feature: "Member Management", values: ["no", "no", "Basic", "yes"] },
+  { feature: "Membership Expiry Tracking", values: ["no", "no", "yes", "yes"] },
+  { feature: "Renewal Tracking", values: ["no", "no", "yes", "yes"] },
+  { feature: "Attendance", values: ["no", "no", "Basic", "yes"] },
+  { feature: "Trainer Assignment", values: ["no", "no", "yes", "yes"] },
+  { feature: "Shop", values: ["no", "Basic", "Full", "Advanced"] },
+  { feature: "Product Management", values: ["no", "Basic", "yes", "yes"] },
+  { feature: "Cart", values: ["no", "yes", "yes", "yes"] },
+  { feature: "Checkout", values: ["no", "Basic", "yes", "yes"] },
+  { feature: "Orders Management", values: ["no", "no", "yes", "yes"] },
+  { feature: "Coupons / Offers", values: ["no", "no", "Basic", "yes"] },
+  { feature: "Payment Gateway Integration", values: ["no", "Optional", "yes", "yes"] },
+  { feature: "Analytics", values: ["no", "Basic", "yes", "Advanced"] },
+  { feature: "Admin Roles", values: ["no", "no", "Basic", "yes"] },
+  { feature: "Notifications", values: ["no", "no", "Basic", "yes"] },
+  { feature: "Audit Logs", values: ["no", "no", "no", "yes"] },
+  { feature: "Membership Renewal Alerts", values: ["no", "no", "Basic", "yes"] },
+  { feature: "Nutrition Section", values: ["no", "yes", "yes", "yes"] },
+  { feature: "Security hardening", values: ["Basic", "yes", "yes", "Advanced"] },
+  { feature: "Performance optimization", values: ["Basic", "yes", "yes", "yes"] },
+  { feature: "Best for", values: ["Small/local gym", "Growing gym", "Serious business", "Premium/pro gym"] }
+];

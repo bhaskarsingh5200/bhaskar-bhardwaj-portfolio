@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Bhaskar Bhardwaj — Web Developer</title>
+    <meta
+      name="description"
+      content="Bhaskar Bhardwaj is a web developer from Patna, Bihar, building modern, responsive, and conversion-focused websites for businesses and growing brands."
+    />
+    <meta name="author" content="Bhaskar Bhardwaj" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://bhaskarbhardwaj.dev/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Bhaskar Bhardwaj — Web Developer" />
+    <meta property="og:title" content="Bhaskar Bhardwaj — Web Developer" />
+    <meta
+      property="og:description"
+      content="Premium websites for businesses, creators, and growing brands."
+    />
+    <meta property="og:url" content="https://bhaskarbhardwaj.dev/" />
+    <meta property="og:image" content="https://bhaskarbhardwaj.dev/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Bhaskar Bhardwaj — Independent Web Developer" />
+    <meta property="og:locale" content="en_IN" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Bhaskar Bhardwaj — Web Developer" />
+    <meta
+      name="twitter:description"
+      content="Premium websites for businesses, creators, and growing brands."
+    />
+    <meta name="twitter:image" content="https://bhaskarbhardwaj.dev/og-image.png" />
+
+    <meta name="theme-color" content="#151A1E" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <script>
+      (function () {
+        var VALID = ["blue-black", "white-blue", "white-green", "black-purple", "white-orange", "black-pink"];
+        var KEY = "bb-site-theme";
+        function applyTheme(t) {
+          if (VALID.indexOf(t) > -1) document.documentElement.setAttribute("data-theme", t);
+        }
+        try {
+          var cached = localStorage.getItem(KEY);
+          if (cached) applyTheme(cached);
+        } catch (e) {}
+        var url = "%VITE_SUPABASE_URL%";
+        var key = "%VITE_SUPABASE_ANON_KEY%";
+        if (!url || !key) return;
+        fetch(url + "/rest/v1/site_settings?key=eq.theme_palette&select=value", {
+          headers: { apikey: key, Authorization: "Bearer " + key }
+        })
+          .then(function (r) {
+            return r.json();
+          })
+          .then(function (rows) {
+            var t = rows && rows.length ? rows[0].value : null;
+            if (typeof t === "string") {
+              applyTheme(t);
+              try {
+                localStorage.setItem(KEY, t);
+              } catch (e) {}
+            }
+          })
+          .catch(function () {});
+      })();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Bhaskar Bhardwaj",
+        "jobTitle": "Independent Web Developer",
+        "url": "https://bhaskarbhardwaj.dev/",
+        "image": "https://bhaskarbhardwaj.dev/og-image.png",
+        "sameAs": [
+          "https://github.com/",
+          "https://www.linkedin.com/in/"
+        ],
+        "knowsAbout": [
+          "Web Development",
+          "WordPress",
+          "PHP",
+          "JavaScript",
+          "React",
+          "E-commerce"
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Bhaskar Bhardwaj — Independent Web Developer",
+        "description": "Premium websites for businesses, creators, and growing brands.",
+        "url": "https://bhaskarbhardwaj.dev/",
+        "email": "bhaskarsingh876543@gmail.com",
+        "telephone": "+91 9508594706",
+        "image": "https://bhaskarbhardwaj.dev/og-image.png",
+        "priceRange": "₹15,000–₹50,000+",
+        "makesOffer": [
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Service", "name": "Business Website" }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Service", "name": "WordPress Website" }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Service", "name": "E-commerce Website" }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Service", "name": "Custom Web Development" }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
