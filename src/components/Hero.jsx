@@ -141,9 +141,10 @@ export default function Hero() {
             >
               <div className="overflow-hidden rounded-[22px] bg-base">
                 <img
-                  src="/images/portrait-2.png"
+                  src="/images/portrait-2.webp"
                   alt={`${heroData.name} — web developer portrait`}
                   loading="eager"
+                  fetchpriority="high"
                   className="aspect-[4/5] w-full object-cover"
                 />
               </div>

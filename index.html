@@ -41,7 +41,7 @@
 
     <script>
       (function () {
-        var VALID = ["blue-black", "white-blue", "white-green", "black-purple", "white-orange", "black-pink"];
+        var VALID = ["blue-black", "white-blue", "white-green", "black-purple", "white-orange", "black-pink", "white-red", "black-gold", "white-indigo", "black-teal", "cream-brown", "dark-emerald", "black-red", "slate-amber", "navy-gold", "white-teal", "black-orange", "white-violet"];
         var KEY = "bb-site-theme";
         function applyTheme(t) {
           if (VALID.indexOf(t) > -1) {
@@ -86,7 +86,17 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700;800&display=swap"
       rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
     />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700;800&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+
+    <link rel="preload" as="image" href="/images/portrait-2.webp" fetchpriority="high" />
 
     <script type="application/ld+json">
       {

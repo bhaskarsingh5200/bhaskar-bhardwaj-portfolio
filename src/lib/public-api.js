@@ -200,8 +200,8 @@ export async function getAbout() {
   const fallback = {
     heading: fallbackAbout.heading,
     copy: fallbackAbout.copy,
-    profileImage: "/images/portrait-2.png",
-    gallery: ["/images/portrait-1.png", "/images/portrait-2.png", "/images/portrait-3.png"]
+    profileImage: "/images/portrait-2.webp",
+    gallery: ["/images/portrait-1.webp", "/images/portrait-2.webp", "/images/portrait-3.webp"]
   };
   try {
     const settings = await fetchSettings("site_settings");

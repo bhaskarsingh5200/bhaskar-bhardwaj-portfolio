@@ -315,8 +315,8 @@ insert into public.site_settings (key, value) values
   ('linkedin_url', '"https://www.linkedin.com/in/"'),
   ('footer_text', '""'),
   ('theme_palette', '"blue-black"'),
-  ('profile_image', '"/images/portrait-2.png"'),
-  ('gallery_images', '["/images/portrait-1.png", "/images/portrait-2.png", "/images/portrait-3.png"]'),
+  ('profile_image', '"/images/portrait-2.webp"'),
+  ('gallery_images', '["/images/portrait-1.webp", "/images/portrait-2.webp", "/images/portrait-3.webp"]'),
   ('about_heading', '"About Me"'),
   ('about_copy', '["I\u0027m Bhaskar Bhardwaj, a web developer based in Patna, Bihar, focused on building modern, reliable websites for businesses and growing brands.", "I hold a Diploma in Computer Science \u0026 Engineering from Kameshwar Narayan Singh Govt. Polytechnic, Samastipur (First Class, CGPA 7.58) and a B.Sc. (Hons.) in Physics from G.D. College, Begusarai (LNMU). My work combines thoughtful design with practical development \u2014 performance, responsiveness, SEO foundations, and websites that are easy to manage after launch.", "I work across WordPress, custom themes, React-based interfaces, e-commerce, content platforms, and business websites."]')
 on conflict (key) do nothing;

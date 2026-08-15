@@ -93,6 +93,186 @@
   --accent-grad-to: 219 39 119;
 }
 
+[data-theme="white-red"] {
+  --base: 255 246 246;
+  --surface: 255 255 255;
+  --surface-2: 255 241 242;
+  --surface-3: 255 228 230;
+  --ink: 76 5 25;
+  --ink-secondary: 136 41 62;
+  --ink-muted: 166 84 100;
+  --line: 136 41 62;
+  --accent: 225 29 72;
+  --accent-hover: 244 63 94;
+  --accent-grad-from: 251 113 133;
+  --accent-grad-to: 190 18 60;
+}
+
+[data-theme="black-gold"] {
+  --base: 21 18 16;
+  --surface: 30 26 22;
+  --surface-2: 39 34 29;
+  --surface-3: 50 43 36;
+  --ink: 255 255 255;
+  --ink-secondary: 201 189 172;
+  --ink-muted: 158 145 127;
+  --line: 201 189 172;
+  --accent: 212 160 42;
+  --accent-hover: 234 179 8;
+  --accent-grad-from: 250 204 21;
+  --accent-grad-to: 180 130 20;
+}
+
+[data-theme="white-indigo"] {
+  --base: 246 245 255;
+  --surface: 255 255 255;
+  --surface-2: 238 237 255;
+  --surface-3: 224 222 255;
+  --ink: 30 27 75;
+  --ink-secondary: 68 64 128;
+  --ink-muted: 99 95 158;
+  --line: 68 64 128;
+  --accent: 79 70 229;
+  --accent-hover: 99 102 241;
+  --accent-grad-from: 129 140 248;
+  --accent-grad-to: 67 56 202;
+}
+
+[data-theme="black-teal"] {
+  --base: 14 23 23;
+  --surface: 22 34 34;
+  --surface-2: 29 44 44;
+  --surface-3: 38 56 56;
+  --ink: 255 255 255;
+  --ink-secondary: 184 213 211;
+  --ink-muted: 140 173 170;
+  --line: 184 213 211;
+  --accent: 20 184 166;
+  --accent-hover: 45 212 191;
+  --accent-grad-from: 94 234 212;
+  --accent-grad-to: 13 148 136;
+}
+
+[data-theme="cream-brown"] {
+  --base: 251 247 240;
+  --surface: 255 255 255;
+  --surface-2: 247 240 229;
+  --surface-3: 240 229 211;
+  --ink: 62 39 14;
+  --ink-secondary: 110 79 39;
+  --ink-muted: 143 112 72;
+  --line: 110 79 39;
+  --accent: 154 107 47;
+  --accent-hover: 180 130 60;
+  --accent-grad-from: 196 145 76;
+  --accent-grad-to: 133 89 35;
+}
+
+[data-theme="dark-emerald"] {
+  --base: 11 22 18;
+  --surface: 18 32 27;
+  --surface-2: 24 41 35;
+  --surface-3: 32 52 44;
+  --ink: 255 255 255;
+  --ink-secondary: 185 210 200;
+  --ink-muted: 140 168 156;
+  --line: 185 210 200;
+  --accent: 16 185 129;
+  --accent-hover: 52 211 153;
+  --accent-grad-from: 110 231 183;
+  --accent-grad-to: 5 150 105;
+}
+
+[data-theme="black-red"] {
+  --base: 24 12 12;
+  --surface: 34 18 18;
+  --surface-2: 44 24 24;
+  --surface-3: 56 31 31;
+  --ink: 255 255 255;
+  --ink-secondary: 205 178 178;
+  --ink-muted: 158 130 130;
+  --line: 205 178 178;
+  --accent: 225 29 72;
+  --accent-hover: 248 62 92;
+  --accent-grad-from: 251 113 133;
+  --accent-grad-to: 190 18 60;
+}
+
+[data-theme="slate-amber"] {
+  --base: 19 22 28;
+  --surface: 27 31 38;
+  --surface-2: 35 40 48;
+  --surface-3: 45 51 60;
+  --ink: 255 255 255;
+  --ink-secondary: 196 201 210;
+  --ink-muted: 150 156 166;
+  --line: 196 201 210;
+  --accent: 245 158 11;
+  --accent-hover: 251 191 36;
+  --accent-grad-from: 252 211 77;
+  --accent-grad-to: 217 119 6;
+}
+
+[data-theme="navy-gold"] {
+  --base: 10 19 33;
+  --surface: 17 28 46;
+  --surface-2: 23 36 58;
+  --surface-3: 31 47 73;
+  --ink: 255 255 255;
+  --ink-secondary: 190 201 219;
+  --ink-muted: 146 159 180;
+  --line: 190 201 219;
+  --accent: 201 162 39;
+  --accent-hover: 218 180 58;
+  --accent-grad-from: 232 200 90;
+  --accent-grad-to: 173 135 28;
+}
+
+[data-theme="white-teal"] {
+  --base: 242 250 249;
+  --surface: 255 255 255;
+  --surface-2: 235 247 246;
+  --surface-3: 218 240 239;
+  --ink: 15 50 46;
+  --ink-secondary: 59 96 92;
+  --ink-muted: 95 134 130;
+  --line: 59 96 92;
+  --accent: 13 148 136;
+  --accent-hover: 20 184 166;
+  --accent-grad-from: 45 212 191;
+  --accent-grad-to: 13 148 136;
+}
+
+[data-theme="black-orange"] {
+  --base: 25 17 12;
+  --surface: 35 24 17;
+  --surface-2: 45 32 23;
+  --surface-3: 57 41 30;
+  --ink: 255 255 255;
+  --ink-secondary: 208 191 178;
+  --ink-muted: 162 144 130;
+  --line: 208 191 178;
+  --accent: 249 115 22;
+  --accent-hover: 251 146 60;
+  --accent-grad-from: 251 146 60;
+  --accent-grad-to: 234 88 12;
+}
+
+[data-theme="white-violet"] {
+  --base: 246 245 252;
+  --surface: 255 255 255;
+  --surface-2: 240 238 252;
+  --surface-3: 228 225 248;
+  --ink: 35 27 68;
+  --ink-secondary: 75 66 116;
+  --ink-muted: 108 100 150;
+  --line: 75 66 116;
+  --accent: 124 58 237;
+  --accent-hover: 139 92 246;
+  --accent-grad-from: 167 139 250;
+  --accent-grad-to: 109 40 217;
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;

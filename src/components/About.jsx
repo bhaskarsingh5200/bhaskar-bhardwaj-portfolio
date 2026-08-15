@@ -33,7 +33,7 @@ export default function About() {
 
   const aboutData = about || { heading: "About Me", copy: [], profileImage: "", gallery: [] };
   const paragraphs = aboutData.copy.length ? aboutData.copy.slice(0, 2) : [];
-  const profileImage = aboutData.profileImage || "/images/portrait-2.png";
+  const profileImage = aboutData.profileImage || "/images/portrait-2.webp";
 
   return (
     <section id="about" className="section bg-surface">
