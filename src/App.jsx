@@ -56,7 +56,8 @@ function ThemeApplier() {
       root.removeAttribute("data-theme");
       return;
     }
-    const palette = settings?.theme_palette || DEFAULT_PALETTE;
+    if (!settings) return;
+    const palette = settings.theme_palette || DEFAULT_PALETTE;
     const previous = root.getAttribute("data-theme");
     if (PALETTES.some((p) => p.id === palette)) {
       if (previous && previous !== palette) {
@@ -66,6 +67,10 @@ function ThemeApplier() {
       try {
         localStorage.setItem("bb-site-theme", palette);
       } catch (e) {}
+      const meta = document.querySelector('meta[name="theme-color"]');
+      if (meta) {
+        meta.setAttribute("content", getComputedStyle(document.body).backgroundColor);
+      }
       if (previous && previous !== palette) {
         requestAnimationFrame(() => root.classList.remove("theme-flip"));
       }

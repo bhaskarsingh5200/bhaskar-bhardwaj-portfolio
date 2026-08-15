@@ -44,7 +44,16 @@
         var VALID = ["blue-black", "white-blue", "white-green", "black-purple", "white-orange", "black-pink"];
         var KEY = "bb-site-theme";
         function applyTheme(t) {
-          if (VALID.indexOf(t) > -1) document.documentElement.setAttribute("data-theme", t);
+          if (VALID.indexOf(t) > -1) {
+            document.documentElement.setAttribute("data-theme", t);
+            if (document.body) {
+              var meta = document.querySelector('meta[name="theme-color"]');
+              if (meta) {
+                var c = getComputedStyle(document.body).backgroundColor;
+                if (c && c !== "rgba(0, 0, 0, 0)") meta.setAttribute("content", c);
+              }
+            }
+          }
         }
         try {
           var cached = localStorage.getItem(KEY);
