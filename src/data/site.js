@@ -1,4 +1,4 @@
-const env = import.meta.env;
+﻿const env = import.meta.env;
 
 export const siteConfig = {
   SITE_URL: env.VITE_PUBLIC_SITE_URL || "https://bhaskarbhardwaj.dev",
@@ -19,10 +19,10 @@ export const site = {
 
 export const navigation = [
   { label: "Home", href: "#top" },
-  { label: "About", href: "#about" },
+  { label: "Portfolio", href: "#work" },
   { label: "Services", href: "#services" },
   { label: "Pricing", href: "#pricing" },
-  { label: "Portfolio", href: "#work" },
+  { label: "About", href: "#about" },
   { label: "Contact", href: "#contact" }
 ];
 

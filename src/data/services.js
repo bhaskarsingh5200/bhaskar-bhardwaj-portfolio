@@ -3,25 +3,57 @@ export const services = [
     id: "01",
     title: "Business Websites",
     description: "Professional websites built to establish credibility and generate leads.",
-    icon: "browser"
+    icon: "browser",
+    group: "web"
   },
   {
     id: "02",
-    title: "WordPress Development",
-    description: "Custom WordPress websites, themes, CMS setups, and performance optimization.",
-    icon: "layers"
+    title: "Gym & Fitness Websites",
+    description: "Complete gym websites with membership plans, trainer profiles, bookings and management.",
+    icon: "dumbbell",
+    group: "web"
   },
   {
     id: "03",
-    title: "E-commerce",
-    description: "Modern online stores designed for smooth shopping experiences and growth.",
-    icon: "bag"
+    title: "WordPress Development",
+    description: "Custom WordPress websites, themes, CMS setups, and performance optimization.",
+    icon: "layers",
+    group: "web"
   },
   {
     id: "04",
+    title: "E-commerce Websites",
+    description: "Modern online stores designed for smooth shopping experiences and growth.",
+    icon: "bag",
+    group: "web"
+  },
+  {
+    id: "05",
     title: "Custom Web Development",
     description: "React and custom frontend solutions when a standard website isn't enough.",
-    icon: "code"
+    icon: "code",
+    group: "web"
+  },
+  {
+    id: "06",
+    title: "Social Media Management",
+    description: "Content, posting and growth for your business social media profiles.",
+    icon: "megaphone",
+    group: "digital"
+  },
+  {
+    id: "07",
+    title: "Google Business Profile",
+    description: "Complete setup and optimization so your business appears on Google Maps and Search.",
+    icon: "map-pin",
+    group: "digital"
+  },
+  {
+    id: "08",
+    title: "AI Automations",
+    description: "AI chatbots and smart automations that save time and capture more leads.",
+    icon: "bot",
+    group: "digital"
   }
 ];
 

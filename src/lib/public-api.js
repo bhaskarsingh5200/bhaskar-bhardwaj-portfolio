@@ -136,7 +136,8 @@ export async function getPublishedServices() {
       id: r.id,
       title: r.title,
       description: r.description || "",
-      icon: r.icon || "code"
+      icon: r.icon || "code",
+      group: ["megaphone", "map-pin", "bot"].includes(r.icon) ? "digital" : "web"
     }));
     writeCache("services", data);
     return data;
@@ -197,6 +198,10 @@ export async function getHighlights() {
 export async function getAbout() {
   const cached = readCache("about");
   if (cached) return cached;
+  const toWebp = (p) =>
+    typeof p === "string" && p.startsWith("/images/") && p.endsWith(".png")
+      ? p.replace(/\.png$/, ".webp")
+      : p;
   const fallback = {
     heading: fallbackAbout.heading,
     copy: fallbackAbout.copy,
@@ -212,8 +217,10 @@ export async function getAbout() {
     const data = {
       heading: settings.about_heading || fallbackAbout.heading,
       copy: Array.isArray(settings.about_copy) ? settings.about_copy : fallbackAbout.copy,
-      profileImage: settings.profile_image || "",
-      gallery: Array.isArray(settings.gallery_images) ? settings.gallery_images : fallback.gallery
+      profileImage: settings.profile_image ? toWebp(settings.profile_image) : fallback.profileImage,
+      gallery: Array.isArray(settings.gallery_images)
+        ? settings.gallery_images.map(toWebp)
+        : fallback.gallery
     };
     writeCache("about", data);
     return data;

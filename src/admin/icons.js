@@ -17,7 +17,11 @@ export const ICON_OPTIONS = [
   { value: "git", label: "Git" },
   { value: "github", label: "GitHub" },
   { value: "figma", label: "Figma" },
-  { value: "hostinger", label: "Hostinger" }
+  { value: "hostinger", label: "Hostinger" },
+  { value: "dumbbell", label: "Dumbbell" },
+  { value: "megaphone", label: "Megaphone" },
+  { value: "map-pin", label: "Map Pin" },
+  { value: "bot", label: "Bot / AI" }
 ];
 
 export const CATEGORY_OPTIONS = ["Frontend", "CMS & Backend", "Workflow"];
