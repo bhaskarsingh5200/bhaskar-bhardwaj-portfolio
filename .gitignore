@@ -29,3 +29,6 @@ Thumbs.db
 # Misc
 .vite/
 .vercel/
+
+.vercel
+.env*
