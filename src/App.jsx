@@ -1,6 +1,7 @@
 import { lazy, Suspense, useEffect } from "react";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import { MotionConfig } from "framer-motion";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import Navbar from "./components/Navbar.jsx";
 import Hero from "./components/Hero.jsx";
 import Footer from "./components/Footer.jsx";
@@ -126,6 +127,7 @@ export default function App() {
           <Shell />
         </MotionConfig>
       </ContentProvider>
+      <SpeedInsights />
     </BrowserRouter>
   );
 }
